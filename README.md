@@ -18,6 +18,10 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
 | API 串接 (API Integration) | [GitHub REST API](https://docs.github.com/en/rest) |
 | 部署 (Deploy)| [Netlify](https://www.netlify.com/) |
 
+## Demo
+
+@TODO
+
 ## Todo List
 
 - [x] 顯示使用者上所有 GitHub Repos 的總大小
