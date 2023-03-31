@@ -4,7 +4,7 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
 
 **NOTICED**: IT'S ONLY FOR **PUBLIC** REPOSITORIES AND IT'S DIFFERENT FROM THE SIZE DOWNLOADED BY CLONING.
 
-一個簡單計算您所有 GitHub 存儲庫總大小的[網站](https://total-repos-size.netlify.app)。
+:file_cabinet: 一個簡單計算您所有 GitHub 存儲庫總大小的[網站](https://total-repos-size.netlify.app)。
 
 **注意**: 這個網站僅計算**公開**的 GitHub Repos 的大小，並非下載後的大小。
 
