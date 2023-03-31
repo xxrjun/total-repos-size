@@ -13,7 +13,7 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
 ![Svelte](https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00) ![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=Svelte&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
 |             類別              |                     名稱                     |
-| :---------------------------: | :------------------------------------------: |
+| --------------------------- | ------------------------------------------ |
 | 前端框架 (Frontend Framework) | [Svelte](https://github.com/sveltejs/svelte) |
 | API 串接 (API Integration) | [GitHub REST API](https://docs.github.com/en/rest) |
 | 部署 (Deploy)| [Netlify](https://www.netlify.com/) |
