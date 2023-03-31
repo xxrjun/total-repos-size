@@ -24,7 +24,7 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
       Display the total size of all user's GitHub Repos
 - [x] 新增暗色模式
       Add Dark Mode
-- [ ] 關於頁面
+- [x] 關於頁面
       About Page
 - [ ] 如果使用者輸入不存在的 GitHub 帳號，要有錯誤訊息
       If the user enters a non-existent GitHub account, an error message should be displayed.
