@@ -84,7 +84,7 @@
 </script>
 
 <svelte:head>
-	<title>Home | GitHub Repository Size Calculator</title>
+	<title>Compare | GitHub Repository Size Calculator</title>
 	<meta name="description" content="GitHub Repository Size Calculator" />
 </svelte:head>
 
