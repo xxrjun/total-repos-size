@@ -17,6 +17,7 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
 | 前端框架 (Frontend Framework) | [Svelte](https://github.com/sveltejs/svelte) |
 | API 串接 (API Integration) | [GitHub REST API](https://docs.github.com/en/rest) |
 | 部署 (Deploy)| [Netlify](https://www.netlify.com/) |
+| 其他工具 (Others)| [ChatGPT](https://openai.com/blog/chatgpt) |
 
 ## Demo
 
@@ -26,12 +27,24 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
 
 - [x] 顯示使用者上所有 GitHub Repos 的總大小
       Display the total size of all user's GitHub Repos
+
 - [x] 新增暗色模式
       Add Dark Mode
+      
 - [x] 關於頁面
       About Page
+
+- [ ] 區分單人模式與比較模式
+      Separate single mode and compare mode
+
 - [ ] 如果使用者輸入不存在的 GitHub 帳號，要有錯誤訊息
       If the user enters a non-existent GitHub account, an error message should be displayed.
+
+- [ ] 查詢結果要新增時間戳記
+      Add timestamp to the result
+
+- [ ] 查詢結果 Card 能夠提供使用者下載
+      The result can be downloaded by the user
 
 ## Usage
 
