@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d01a3824-0b0a-4ed7-8e2a-c9e5537061cf/deploy-status)](https://app.netlify.com/sites/total-repos-size/deploys)
+
 # Total Repos Size
 
 A [simple website](https://total-repos-size.netlify.app) to calculate the combined size of all your GitHub repositories. Which is deployed on [Netlify](https://www.netlify.com/).
