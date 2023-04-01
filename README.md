@@ -55,32 +55,32 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
 
 ### 1. 複製儲存庫至本地 Clone this repository
 
-```bash
+```shell
 git clone https://github.com/xxrjun/total-repos-size.git
 ```
 
 ### 2. 安裝套件 Install dependencies
 
-```bash
+```shell
 # Using npm
 npm install
 ```
 
 ### 3. 運行應用程式(開發模式) Start the app in development mode
 
-```bash
+```shell
 npm run dev
 ```
 
 ### 4. 打包應用程式 Build the app
 
-```bash
+```shell
 npm run build
 ```
 
 ### 5. 運行應用程式 Start the app in production mode
 
-```bash
+```shell
 npm run start
 ```
 
