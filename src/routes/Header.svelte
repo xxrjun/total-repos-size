@@ -32,6 +32,9 @@
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li>
+			<li aria-current={$page.url.pathname === '/compare' ? 'page' : undefined}>
+				<a href="/compare">Compare</a>
+			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
 			</li>
@@ -148,6 +151,7 @@
 	li {
 		position: relative;
 		height: 100%;
+		margin: 0 0.5rem;
 	}
 
 	li[aria-current='page']::before {

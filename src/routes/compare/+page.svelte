@@ -3,9 +3,16 @@
 	import axios from 'axios';
 
 	let userId1 = '';
+	let userId2 = '';
 	let totalRepos1 = 0;
+	let totalRepos2 = 0;
 	let totalSize1 = '';
+	let totalSize2 = '';
+	let compareResult = '';
+	let errorMessage1 = '';
+	let errorMessage2 = '';
 	let timestamp1 = '';
+	let timestamp2 = '';
 
 	// Calculate the total size of all repositories
 	async function calculate() {
@@ -30,6 +37,29 @@
 		} else {
 			totalRepos1 = 0;
 			totalSize1 = '';
+			compareResult = '';
+		}
+
+		if (userId2) {
+			try {
+				const response = await axios.get(`https://api.github.com/users/${userId2}/repos`);
+				const repositories = response.data;
+
+				totalRepos2 = repositories.length;
+				const totalSize = repositories.reduce(
+					(/** @type {any} */ acc, /** @type {{ size: any; }} */ repo) => acc + repo.size,
+					0
+				);
+				totalSize2 = formatSize(totalSize);
+				timestamp2 = new Date().toLocaleString();
+			} catch (error) {
+				totalRepos2 = 0;
+				totalSize2 = '';
+				errorMessage2 = error;
+			}
+		} else {
+			totalRepos2 = 0;
+			totalSize2 = '';
 			compareResult = '';
 		}
 	}
@@ -64,7 +94,7 @@
 	<form on:submit|preventDefault={calculate}>
 		<div class="grid">
 			<div class="card">
-				<label class="label" for="userId1">GitHub ID </label>
+				<label class="label" for="userId1">GitHub ID 1</label>
 				<input class="input" type="text" id="userId1" bind:value={userId1} />
 				<button class="button" on:click={calculate}>Calculate</button>
 				{#if totalRepos1 !== null}
@@ -76,6 +106,22 @@
 							<span class="size">{totalSize1}</span>
 						</p>
 						<span class="time">{timestamp1}</span>
+					</div>
+				{/if}
+			</div>
+			<div class="card">
+				<label class="label" for="userId2">GitHub ID 2</label>
+				<input class="input" type="text" id="userId2" bind:value={userId2} />
+				<button class="button" on:click={calculate}>Calculate</button>
+				{#if totalRepos2 !== null}
+					<div class="result">
+						<p>
+							User <span class="username">{userId2}</span> has
+							<span class="repos">{totalRepos2}</span>
+							public repositories, and the total size is
+							<span class="size">{totalSize2}</span>
+						</p>
+						<span class="time">{timestamp2}</span>
 					</div>
 				{/if}
 			</div>
@@ -99,12 +145,12 @@
 
 	form {
 		width: 100%;
-		grid-template-columns: 1rem repeat(auto-fill, 100px) 1rem;
-		padding: 0 2rem;
 	}
 
 	.grid {
 		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+		grid-gap: 2rem;
 	}
 
 	.card {
