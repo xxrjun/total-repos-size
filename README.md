@@ -1,5 +1,10 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d01a3824-0b0a-4ed7-8e2a-c9e5537061cf/deploy-status)](https://app.netlify.com/sites/total-repos-size/deploys)
 
+<!-- Show demo in mid -->
+<div>
+  <img src="./demo-src/demo.gif" alt="DEMO" width="1200"/>
+</div>
+
 # Total Repos Size
 
 A [simple website](https://total-repos-size.netlify.app) to calculate the combined size of all your GitHub repositories. Which is deployed on [Netlify](https://www.netlify.com/).
@@ -19,11 +24,9 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
 | 前端框架 (Frontend Framework) | [Svelte](https://github.com/sveltejs/svelte) |
 | API 串接 (API Integration) | [GitHub REST API](https://docs.github.com/en/rest) |
 | 部署 (Deploy)| [Netlify](https://www.netlify.com/) |
-| 其他工具 (Others)| [ChatGPT](https://openai.com/blog/chatgpt) |
+| 其他工具 (Others)| [ChatGPT](https://openai.com/blog/chatgpt)、[GitHub Copilot](https://github.com/features/copilot) |
 
-## Demo
 
-@TODO
 
 ## Todo List
 
@@ -36,19 +39,19 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
 - [x] 關於頁面
       About Page
 
-- [ ] 區分單人模式與比較模式
+- [x] 區分單人模式與比較模式
       Separate single mode and compare mode
 
 - [ ] 如果使用者輸入不存在的 GitHub 帳號，要有錯誤訊息
       If the user enters a non-existent GitHub account, an error message should be displayed.
 
-- [ ] 查詢結果要新增時間戳記
+- [x] 查詢結果要新增時間戳記
       Add timestamp to the result
 
 - [ ] 查詢結果 Card 能夠提供使用者下載
       The result can be downloaded by the user
 
-## Usage
+## Getting Started
 
 ### 1. 複製儲存庫至本地 Clone this repository
 
@@ -80,3 +83,34 @@ npm run build
 ```bash
 npm run start
 ```
+
+## Usage
+
+How to know your GitHub ID?
+
+In this screenshot, the GitHub ID is `xxrjun`.
+
+<div>
+  <img src="./demo-src/check-github-id.png" alt="GitHub ID" width="500"/>
+</div>
+
+
+### 1. 單人模式 Single Mode
+
+在輸入框輸入 GitHub 帳號後，按下 Enter 或點擊「查詢」按鈕，即可查詢該帳號下所有 Repos 的總大小。
+
+Enter the GitHub account in the input box, press Enter or click the "Search" button to query the total size of all Repos under the account.
+
+<div>
+  <img src="./demo-src/demo-single.png" alt="Single Mode" width="600"/>
+</div>
+
+### 2. 比較模式 Compare Mode
+
+同單人模式
+
+Same as single mode
+
+<div>
+  <img src="./demo-src/demo-compare.png" alt="Compre Mode" width="600"/>
+</div>
