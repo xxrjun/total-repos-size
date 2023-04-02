@@ -19,14 +19,12 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
 
 ![Svelte](https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00) ![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=Svelte&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
-|             類別              |                     名稱                     |
-| --------------------------- | ------------------------------------------ |
-| 前端框架 (Frontend Framework) | [Svelte](https://github.com/sveltejs/svelte) |
-| API 串接 (API Integration) | [GitHub REST API](https://docs.github.com/en/rest) |
-| 部署 (Deploy)| [Netlify](https://www.netlify.com/) |
-| 其他工具 (Others)| [ChatGPT](https://openai.com/blog/chatgpt)、[GitHub Copilot](https://github.com/features/copilot) |
-
-
+| 類別                          | 名稱                                                                                              |
+| ----------------------------- | ------------------------------------------------------------------------------------------------- |
+| 前端框架 (Frontend Framework) | [Svelte](https://github.com/sveltejs/svelte)                                                      |
+| API 串接 (API Integration)    | [GitHub REST API](https://docs.github.com/en/rest)                                                |
+| 部署 (Deploy)                 | [Netlify](https://www.netlify.com/)                                                               |
+| 其他工具 (Others)             | [ChatGPT](https://openai.com/blog/chatgpt)、[GitHub Copilot](https://github.com/features/copilot) |
 
 ## Todo List
 
@@ -35,7 +33,6 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
 
 - [x] 新增暗色模式
       Add Dark Mode
-      
 - [x] 關於頁面
       About Page
 
@@ -50,6 +47,9 @@ A [simple website](https://total-repos-size.netlify.app) to calculate the combin
 
 - [ ] 查詢結果 Card 能夠提供使用者下載
       The result can be downloaded by the user
+
+- [ ] 行動裝置 RWD
+      RWD for mobile devices
 
 ## Getting Started
 
@@ -93,7 +93,6 @@ In this screenshot, the GitHub ID is `xxrjun`.
 <div>
   <img src="./demo-src/check-github-id.png" alt="GitHub ID" width="500"/>
 </div>
-
 
 ### 1. 單人模式 Single Mode
 
