@@ -14,7 +14,7 @@
 
 <header>
 	<div class="corner">
-		<div>
+		<div class="switch-button">
 			<input type="checkbox" class="checkbox" id="checkbox" />
 			<label for="checkbox" class="label">
 				<i class="fas fa-moon" />
@@ -76,10 +76,18 @@
 		object-fit: contain;
 	}
 
+	.corner .switch-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+
 	.checkbox {
 		opacity: 0;
 		position: absolute;
-		width: 100%;
+		width: 50px;
 	}
 
 	.label {
@@ -91,7 +99,6 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 5px;
-		margin: 1.5em 2em;
 		position: relative;
 		transform: scale(1.5);
 	}
@@ -118,6 +125,7 @@
 
 	.fa-sun {
 		color: yellow;
+		height: 19px;
 	}
 
 	nav {
@@ -184,5 +192,56 @@
 
 	a:hover {
 		color: var(--color-theme-1);
+	}
+
+	/* Media Queries for Responsive Design */
+	@media (max-width: 640px) {
+		.corner {
+			width: 3em;
+			height: 3em;
+		}
+
+		.corner img {
+			width: 2.5em;
+			height: 2.5em;
+		}
+
+		.label {
+			width: 38px;
+			height: 26px;
+			padding: 1px;
+			/* transform: scale(1); */
+		}
+
+		.ball {
+			width: 22px;
+			height: 22px;
+			top: 1px;
+			left: 1px;
+		}
+
+		.checkbox:checked + .label .ball {
+			transform: translateX(15px);
+		}
+
+		.fa-moon {
+			height: 80%;
+			width: 80%;
+		}
+
+		.fa-sun {
+			height: 80%;
+			width: 80%;
+		}
+
+
+		li {
+			margin: 0 0.6rem;
+		}
+		nav a {
+			width: 40px;
+			padding: 0 0.5rem;
+			font-size: 0.1rem;
+		}
 	}
 </style>

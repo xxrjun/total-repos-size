@@ -62,7 +62,7 @@
 	<h1 class="title">GitHub Repository Size Calculator</h1>
 
 	<form on:submit|preventDefault={calculate}>
-		<div class="grid">
+		<div>
 			<div class="card">
 				<label class="label" for="userId1">GitHub ID </label>
 				<input class="input" type="text" id="userId1" bind:value={userId1} />
@@ -99,13 +99,11 @@
 
 	form {
 		width: 100%;
-		grid-template-columns: 1rem repeat(auto-fill, 100px) 1rem;
+		/* grid-template-columns: 1rem repeat(auto-fill, 100px) 1rem; */
 		padding: 0 2rem;
 	}
 
-	.grid {
-		display: grid;
-	}
+
 
 	.card {
 		border-radius: 0.5rem;
@@ -179,9 +177,15 @@
 		font-family: Arial, sans-serif;
 	}
 
-	@media screen and (max-width: 768px) {
-		.grid {
-			grid-template-columns: 1fr;
+	@media screen and (max-width: 640px) {
+		.container {
+			margin: 0rem;
+		}
+
+		form {
+			width: 100%;
+			/* grid-template-columns: 1rem repeat(auto-fill, 100px) 1rem; */
+			padding: 0 0.5rem;
 		}
 	}
 </style>

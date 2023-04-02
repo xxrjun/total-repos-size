@@ -225,7 +225,16 @@
 		font-family: Arial, sans-serif;
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 640px) {
+		.container {
+			margin: 0rem;
+		}
+
+		form {
+			width: 100%;
+			/* grid-template-columns: 1rem repeat(auto-fill, 100px) 1rem; */
+			padding: 0 0.5rem;
+		}
 		.grid {
 			grid-template-columns: 1fr;
 		}
